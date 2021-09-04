@@ -6,7 +6,7 @@ import { OnClickFUNC } from './scripts/script';
 class App extends React.Component {
   render() {
     return <>
-      <div className='main_table'>
+      <div className='main__table'>
         <div className='container'>
           <Button id={1} OnClickFUNC={OnClickFUNC} />
           <div className='lineV V-Up'></div>

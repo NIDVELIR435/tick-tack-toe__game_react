@@ -75,7 +75,10 @@ h6 {
 }
 /* главные стили */
 
-.main_table {
+body {
+   background-color: #545f7d;
+}
+.main__table {
    margin: 0px auto;
    justify-content: center;
    display: flex;
