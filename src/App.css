@@ -1,0 +1,211 @@
+/* обнуление */
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+/* главные стили */
+
+.main_table {
+   margin: 0px auto;
+   justify-content: center;
+   display: flex;
+   background-color: #545f7d;
+   padding: 30px;
+}
+.lineH {
+   height: 7px;
+   background-color: #a855c1;
+}
+.lineV {
+   width: 7px;
+   background-color: #a855c1;
+}
+.V-Up {
+   margin-top: -10px;
+   border-radius: 50px 50px 0px 0px;
+}
+.V-Down {
+   margin-bottom: -10px;
+   border-radius: 0px 0px 50px 50px;
+}
+.H-Left {
+   margin-left: -10px;
+   border-radius: 50px 0px 0px 50px;
+}
+.H-right {
+   margin-right: -10px;
+   border-radius: 0px 50px 50px 0px;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 7px 1fr 7px 1fr;
+   grid-template-rows: 1fr 7px 1fr 7px 1fr;
+}
+.info_text {
+   color: white;
+   font-size: 36px;
+   margin: 10px 10px 10px 30px;
+}
+
+/* крест при нажатии на поле */
+.cross {
+   position: relative;
+   margin: 0px auto;
+   width: 90px;
+   height: 90px;
+}
+
+.cross:before,
+.cross:after {
+   position: absolute;
+   top: -5px;
+   left: 40px;
+   content: " ";
+   height: 100px;
+   width: 10px;
+   background-color: #c4c4c4;
+}
+.cross:before {
+   transform: rotate(45deg);
+}
+.cross:after {
+   transform: rotate(-45deg);
+}
+/* нолик при нажатии на поле */
+
+.zero {
+   position: relative;
+   margin-left: 5px;
+   border: 10px solid #c4c4c4;
+   border-radius: 100px;
+   height: 90px;
+   width: 90px;
+}
+/* линии для перечеркивания */
+
+.line-H {
+   position: absolute;
+   background-color: #af3d38;
+   z-index: 100;
+   left: -100px;
+   top: 45px;
+   height: 10px;
+   width: 300px;
+   border-radius: 5px;
+}
+.line-V {
+   position: absolute;
+   background-color: #af3d38;
+   z-index: 100;
+   top: -100px;
+   left: 45px;
+   height: 300px;
+   width: 10px;
+   border-radius: 5px;
+}
+.line-LO {
+   position: absolute;
+   background-color: #af3d38;
+   z-index: 100;
+   top: 45px;
+   right: -155px;
+   transform: rotate(45deg);
+   height: 10px;
+   width: 410px;
+   border-radius: 5px;
+}
+.line-RO {
+   position: absolute;
+   display: block;
+   background-color: #af3d38;
+   z-index: 100;
+   top: 45px;
+   left: -155px;
+   transform: rotate(-45deg);
+   height: 10px;
+   width: 410px;
+   border-radius: 5px;
+}
+
+.textLackMove {
+   position: absolute;
+   background-color: #44425e;
+   z-index: 100;
+   left: -100px;
+   top: 25px;
+   height: 50px;
+   width: 300px;
+   border: 2px solid #a855c1;
+   border-radius: 5px;
+}

@@ -1,0 +1,11 @@
+.button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #44425e;
+    text-align: center;
+    font-size: 40px;
+}
+.button:hover {
+    background-color: #fff;
+}
